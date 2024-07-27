@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshali- Developer portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+     * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            display: flex;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(153, 153, 237);
+            font-size: 1.02rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+            color: white;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;  
+            align-items: center;
+            margin: 130px 0;
+            
+        }
+        .firstsection > div{
+            width: 30%;
+            margin: 30px 0;
+            
+        }
+
+        .leftsection{
+            font-size: 2.5rem;
+            
+        }
+        .rightsection img{
+            width: 80%;
+            
+        }
+        .purple{
+            color:rgb(18, 18, 62);
+            font-size: 16px;      
+         }
+         .btn-resume{
+            width: 90px;
+            padding: 10px;
+            margin-left: 50px;
+            margin-top: 50px;
+            border-radius: 5px ;
+            background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );
+
+         }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: rgb(170, 107, 228);
+         }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box {
+            background-color: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display:flex;
+        }
+        .secondSection .vertical{
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        .image-top{
+            width: 27px;
+            position: relative;
+            top: -35px;
+            left: -9px;
+
+        }
+        .vertical-title{
+
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;   
+        }
+        /*about me */
+        .About-container{
+            background-color: #f8f9fa;
+
+   }
+.About {
+    background-color: #f8f9fa;
+    margin-top: -5%;
+   
+}
+
+
+.About h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: black;
+    
+}
+
+.about-me {
+    font-size: 1.2em;
+    line-height: 1.6;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.about-leftsection, .about-rightsection {
+    width: 48%; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    box-sizing: border-box;
+}
+
+/* Optional styling for the boxes */
+.about-leftsection {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 3px;
+
+}
+.about-leftsection h2{
+   margin-left: 35%;
+
+}
+.about-leftsection button{
+    margin-left: 35%;
+    margin-top: 20px;
+    padding: 5px;
+    width: 30%;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+.about-rightsection {
+    background-color: #f8d7da;
+}
+.more{
+    margin-top: 20px;
+}
+.bttn {
+     width: 65px;
+     padding: 6px;
+     margin-left: 45%;
+     margin-top: 20px;
+     border-radius: 5px;
+     background-image: radial-gradient(circle farthest-corner at 3.2% 49.6%, rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6%);
+     
+  }
+
+  /* about-rightsection*/
+  .about-rightsection {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 3px;
+
+}
+.about-rightsection h1{
+    margin-left: 40%;
+   }     
+   .skills{
+    text-align: center;
+   }
+.img{
+    display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 10px 0;
+}
+.img-container {
+     display: inline-block;
+    text-align: center;
+     margin: 20px;
+        }
+
+ .img-container img {
+            display: flex;
+            width: 65px; 
+            height: auto;
+            margin-bottom: 5px;
+        }   
+ .btn-languages{
+     margin: 5px auto;   
+     margin-left: 35%;
+    margin-top: 20px;
+    padding: 5px;
+    width: 30%;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+     }   
+   
+     /*projects */
+     .main-project{
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         margin-top: 9%;
+         background-color: #f8f9fa;
+        }
+        
+      .project-container {
+        background-color: #f8f9fa;
+        text-align: center;
+        color: black;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly; 
+        flex-wrap: wrap; 
+      }
+
+      .project-box {
+        height: 430px;
+        width: 27%; 
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: white;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; 
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        margin: 10px; 
+        margin-top: 2%;
+      }
+
+      .project-box img {
+        height: 55%;
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+      }
+
+      .project-info {
+        background-color: rgba(161, 10, 144, 0.72);
+        border-radius: 0 0 11px 11px; /* upar ke dono koneon ke liye 0, niche ke dono koneon ke liye 11px */
+        width: 100%;
+        padding: 9px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the buttons horizontally */
+      }
+
+      .project-info .buttons {
+        display: flex; 
+        justify-content: center; 
+        width: 100%; 
+        gap: 10px; 
+      }
+
+      .project-btn {
+        padding: 6px;
+        margin-bottom: 6px;
+        margin-top: 19px;
+        background-color: black;
+        color: white;
+        width: 70px; /* Adjust width as needed */
+        border-radius: 5px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harshali portfolio</div>
+            <div class="right">
+                <ul>
+                <li><a href="/"> Home</li></a>
+                <li><a href="/">About</li></a>
+                <li><a href="/">Services</li></a>
+                <li><a href="/">Projects</li></a>
+                <li><a href="/">Contact Me</li></a>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+            Hi, I'm <span> Harshali</span> 
+             <span id="element"></span>
+             <div class="purple">Lines of code aren't just strings of characters to me; they're the building blocks of dreams. Every day, life hands us a participation ticket, not a guarantee of victory. But that doesn't deter me. My 'win' isn't just a single destination, it's the ongoing journey of growth, learning, and impact.I'm not just a developer, I'm a problem solver, a collaborator who thrives in the energy of a buzzing team.</div>
+           
+            <button class="btn-resume"><a href="file:///C:/Users/harsh/OneDrive/Desktop/HARSHALI%20RESUME%20(new).pdf" target=""> Resume</a></button>
+           
+
+            </div> 
+            <div class="rightsection">
+            <img src="img.bg.png" alt="">
+            </div>
+        </section>  
+     
+     <div class="About-container">
+     <div class="About">
+      <h1> ABOUT ME</h1> 
+      <p class="about-me">Here you will find more information about me, what I do, and my current <br/>skills mostly in terms of programming and technology</p>
+    </div>
+    <section class="about-section">
+        <div class="about-leftsection">
+            <h2>GET KNOW TO ME</h2>
+            <button>EDUCATION</button>
+            <p>Bachelor of Science<br/>
+                <li>Arts commerce & Science College, Maregaon</li> 
+                <li> Aug 2019 - May 2022</li><br/>
+              
+
+            <p>Bachelor of Science<br/>
+               <li>Arts commerce & Science College, Maregaon</li> 
+               <li> Aug 2019 - May 2022</li><br/>
+             
+               Master Of Computer Application<br/>
+                
+               <li> G.H. Raisoni Univarsity Amravtii</li>
+              <li> Aug 2022 - Jun 2024</li></p>
+              <button>MORE</button>
+              <p class="more">
+                Hi, I'm Harshali Kale, a web developer with a passion for creating beautiful and functional websites.<br/><br/>
+                I have strong foundation in HTML, CSS, JavaScript, and Python.<br/><br/>
+               I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+                
+              </p>
+              <p class="bttn"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="about-rightsection">
+            <h2 class="skills">MY SKILLS</h2>
+            <button class="btn-languages">WEB DEVELOPMENT</button>
+            <div class="img">
+            <div class="img-container">
+            <img src="./image/html.png">
+            <p>HTML</p>  
+        </div>
+            <div class="img-container">
+            <img src="./image/css.png">
+            <p> CSS </p>
+        </div>
+        
+        <div class="img-container">
+            <img src="./image/js.png">
+            <p> CSS </p>
+            
+        </div>
+        </div>
+        <button class="btn-languages">LANGUAGES</button>
+        <div class="img">
+        <div class="img-container">
+            <img src="./image/c-img.png">
+            <p>c</p>    
+        </div>
+
+        <div class="img-container">
+            <img src="./image/c++.png">
+            <p>c++</p>   
+        </div>
+
+        <div class="img-container">
+            <img src="./image/python.png">
+            <p>Python</p>    
+        </div>
+    </div>
+    <button class="btn-languages">TOOLS</button>
+
+    <div class="img">
+        <div class="img-container">
+            <img src="./image/git.png">
+            <p>Git</p>    
+        </div>
+
+        <div class="img-container">
+            <img src="./image/github.png">
+            <p>Github</p>    
+        </div>
+
+        <div class="img-container">
+            <img src="./image/python.png">
+            <p>Python</p>    
+        </div>
+    </div>
+
+        </div>
+    </section>    
+</div>
+
+<div class="main-project">
+    <h1>PROJECTS</h1>
+    <p class="about-me">Here you will find some of my personal projects that I created with each project<br/> containing its project stack
+    </p>
+
+<div class="project-container">
+    <div class="project-box">
+        <img src="./image/project-img-1.png">
+        <div class="project-info">
+            <h3>Amazon Clone</h3>
+            <p>Super Meal is a full stack restaurant website. Key points- RESTful APIs and interactive user interface.</p>
+            <div class="buttons">
+                <button class="project-btn">Code</button>
+                <button class="project-btn">Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="./image/project-img-1.png">
+        <div class="project-info">
+            <h3>Amazon Clone</h3>
+            <p>Super Meal is a full stack restaurant website. Key points- RESTful APIs and interactive user interface.</p>
+            <div class="buttons">
+                <button class="project-btn">Code</button>
+                <button class="project-btn">Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="./image/project-img-1.png">
+        <div class="project-info">
+            <h3>Amazon Clone</h3>
+            <p>Super Meal is a full stack restaurant website. Key points- RESTful APIs and interactive user interface.</p>
+            <div class="buttons">
+                <button class="project-btn">Code</button>
+                <button class="project-btn">Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="./image/project-img-1.png">
+        <div class="project-info">
+            <h3>Amazon Clone</h3>
+            <p>Super Meal is a full stack restaurant website. Key points- RESTful APIs and interactive user interface.</p>
+            <div class="buttons">
+                <button class="project-btn">Code</button>
+                <button class="project-btn">Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="./image/project-img-1.png">
+        <div class="project-info">
+            <h3>Amazon Clone</h3>
+            <p>Super Meal is a full stack restaurant website. Key points- RESTful APIs and interactive user interface.</p>
+            <div class="buttons">
+                <button class="project-btn">Code</button>
+                <button class="project-btn">Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="./image/project-img-1.png">
+        <div class="project-info">
+            <h3>Amazon Clone</h3>
+            <p>Super Meal is a full stack restaurant website. Key points- RESTful APIs and interactive user interface.</p>
+            <div class="buttons">
+                <button class="project-btn">Code</button>
+                <button class="project-btn">Demo</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+  
+<h1> CONTACT</h1> 
+<p class="about-me">Feel free to Contact me by submitting the form below and I will get <br/>back to you as soon as possible</p>
+</div>
+
+<div class="cnt-container">
+
+    
+    <div class="content">
+        <img src="pppp.jpeg" width="50%" class="img-harshu"/>
+      <p class="name">  Harshali Kale<br/><br/>
+        Web Developer 
+      </p>
+<div class="icon">
+    <a href="https://www.instagram.com/crystal25941?igsh=Y21jZXpoOHd4bWQy" target="_blank">
+   <img src="./image/instagram.svg" class="icons"/>
+</a>
+ <a href="https://www.linkedin.com/in/harshali-kale-054b70275/" target="_blank">
+   <img src="./image/linkedin.svg" class="icons"/>
+</a>
+<a href="https://github.com/Harshalikale" target="_blank">
+<img src="./image/github.svg" class="icons" />
+</a>
+
+ <a href="tel:8830637504" >
+   <img src="./image/phone.svg" class="icons"/>
+</a>
+   </div>
+   <button class="btn-download">Download CV</button>
+   
+
+    </div>
+   
+    <div>
+       <h2 class="contact-me">
+        CONTACT ME
+    </h2>
+    <div class="contact-info">
+        <span>Email<br/>harshalikale20@gmail.com</span>
+        <span class="phone">Phone<br/>8830637504</span>
+    </div>
+    <div class="contact-from">
+    <input type="text" placeholder="Enter Your Name" class="text"><br/><br/>
+    <input type="text" placeholder="Enter Your E-mail" class="text"><br/><br/>
+   
+    <input type="text" placeholder="Enter Your Message" class="msg">
+
+
+</div>
+<button class="btn-send">Send</button>
+    </div>       
+</div>
+        
+
+
+    <footer>
+        <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
+        <div class="social-media ">
+        <p class="social-text">Harshali Kale</p>
+
+       <a href="https://github.com/Harshalikale" alt="Visit to Facebook Account"><img src="./image/github.png" class="social-icon"></a>
+       <a href="https://www.linkedin.com/in/harshali-kale-054b70275/" alt="Visit to YouTube Account"><img src="./image/linkedin.svg" class="social-icon"></a> 
+       <a href="https://www.instagram.com/crystal25941?igsh=Y21jZXpoOHd4bWQy" alt="Visit to Instagram Account"><img src="./image/instagram.svg"  class="social-icon"></a>
+       </div>
+      </footer>
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer', 'Frontend Developer','React Js Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
