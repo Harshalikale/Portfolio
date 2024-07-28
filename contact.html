@@ -34,7 +34,7 @@
        <img src="./image/phone.svg" class="icons"/>
     </a>
        </div>
-       <button class="btn-download">Download CV</button>
+       <button class="btn-download"><a href="./image/harshu..resume.png">Download CV</a></button>
        
 
         </div>
@@ -47,16 +47,38 @@
             <span>Email<br/>harshalikale20@gmail.com</span>
             <span class="phone">Phone<br/>8830637504</span>
         </div>
-        <div class="contact-from">
-        <input type="text" placeholder="Enter Your Name" class="text"><br/><br/>
-        <input type="text" placeholder="Enter Your E-mail" class="text"><br/><br/>
-       
-        <input type="text" placeholder="Enter Your Message" class="msg">
-    
+        <div class="contact-form" name="f1">
+          <input type="text" placeholder="Enter Your Name" class="text" name="t1" id="name"><br/><br/>
+          <input type="text" placeholder="Enter Your E-mail" class="text" name="t2" id="email"><br/><br/>
+          <input type="text" placeholder="Enter Your Message" class="msg" name="t3" id="message">
+      </div>
 
-    </div>
-    <button class="btn-send">Send</button>
+      <button class="btn-send" id="send-button">Send</button>
+      
         </div>       
     </div>
+    <script>
+      document.getElementById("send-button").addEventListener("click", function(event) {
+        event.preventDefault(); 
+
+        // Get the values from the input fields
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        // Perform validation (example)
+        if (!name || !email || !message) {
+            alert("All fields are required!");
+            return;
+        }
+
+        // You can add further validation and processing here
+        console.log("Name:", name);
+        console.log("Email:", email);
+        console.log("Message:", message);
+
+        alert("Your response is submitted");
+      });
+    </script>
 </body>
 </html>

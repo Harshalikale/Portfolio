@@ -112,6 +112,7 @@ h1 {
 
 }
 
+
 #name {
     margin-top: 30px;
 }
@@ -220,6 +221,7 @@ footer {
     main hr {
         margin: 20px 20px;
     }
+    
 }
 @media (max-width: 768px) {
     .firstsection {
@@ -229,7 +231,7 @@ footer {
     }
 
     .firstsection > div {
-        width: 80%;
+        width: 90%;
         margin: 20px 0;
     }
 
@@ -311,7 +313,7 @@ footer {
 
     .about-leftsection,
     .about-rightsection {
-        width: 90%;
+        width: 100%;
         padding: 15px;
         margin: 10px 0;
     }
@@ -405,14 +407,15 @@ footer {
     }
 
     .content {
-        width: 100%;
+        width: 93%;
         padding: 10px;
     }
 
     .img-harshu {
         height: 150px;
         width: 150px;
-        margin: 20px auto;
+        margin-left: 50px;
+        
     }
 
     .name {
@@ -430,8 +433,8 @@ footer {
     }
 
     .btn-download {
-        width: 90%;
-        margin: 20px auto;
+        width: 60%;
+        margin-left: 50px;
         padding: 10px;
         text-align: center;
     }
@@ -457,7 +460,7 @@ footer {
 
     .contact-from {
         margin-top: 20px;
-        width: 90%;
+        width: 60%;
         margin: 0 auto;
     }
 
@@ -471,6 +474,7 @@ footer {
         width: 90%;
         padding: 10px;
         text-align: center;
+        margin-left: 20px;
     }
 }
 
