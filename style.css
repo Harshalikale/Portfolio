@@ -1,14 +1,16 @@
-body{
+body {
     margin: 0;
     padding: 0;
 
 }
-h1{
+
+h1 {
     justify-content: center;
     text-align: center;
     margin-top: 6%;
 }
-.about-me{
+
+.about-me {
     font-size: 1.2em;
     line-height: 1.6;
     display: block;
@@ -16,26 +18,29 @@ h1{
     text-align: center;
     color: black;
     margin-top: 10px;
-  background-color: white;
+    background-color: white;
 }
-.main-project{
+
+.main-project {
     justify-content: center;
 
 }
 
-.cnt-container{
+.cnt-container {
     display: flex;
     width: 70%;
     border: 1px solid black;
-     margin: 3% auto;
-     box-shadow: 2px 3px 5px 2px;
+    margin: 3% auto;
+    box-shadow: 2px 3px 5px 2px;
 
 }
-.content{
+
+.content {
     background-color: #CADCFC;
     width: 30%;
 }
-.img-harshu{
+
+.img-harshu {
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -43,71 +48,96 @@ h1{
     margin-left: 40px;
     margin-top: 30px;
 }
-.name{
+
+.name {
     text-align: center;
     margin-top: 3px;
 }
-.icon{
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.icons{
-width: 30px;
-padding: 10px;
-text-align: center;
 
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.btn-download{
-border-radius: 5px;
-background-color: black;
-color: white;
-margin-top: 65px;
-margin-left: 99px;
-padding: 7px;
-margin-bottom: 5%;
+
+.icons {
+    width: 30px;
+    padding: 10px;
+    text-align: center;
 
 }
 
-.contact-me{
-margin-left: 250px;
+.btn-download {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 65px;
+    margin-left: 99px;
+    padding: 7px;
+    margin-bottom: 5%;
+
 }
+
+.btn-download a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+}
+
+.contact-me {
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
 .contact-info {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
+
 .contact-info span {
     display: inline-block;
     margin-right: 20px;
 }
+
 .contact-info .phone {
     margin-left: 180px;
 }
-.contact-from{
-margin-top: 60px;
+
+.contact-from {
+    margin-top: 60px;
 
 }
-.text{
-   
+
+#name {
+    margin-top: 30px;
+}
+
+.text {
+
     margin-left: 80px;
     padding: 15px;
     width: 100%;
     border-radius: 15px;
- background-color: black;
- color: white;
+    background-color: black;
+    color: white;
 }
-.msg{
+
+.msg {
     margin-left: 80px;
     padding: 15px;
     padding-bottom: 50px;
     width: 100%;
     border-radius: 15px;
-background-color: black;
-color: white;
-   
+    background-color: black;
+    color: white;
+
 }
-.btn-send{
+
+.btn-send {
     margin-top: 35px;
     margin-left: 350px;
     padding: 8px;
@@ -119,40 +149,329 @@ color: white;
 }
 
 /*footer */
-.social-media{
+.social-media {
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     align-items: center;
-    }
-    
-    .social-icon{
+}
+
+.social-icon {
     height: 40px;
     width: 40px;
     padding-top: 10px;
-    }
+}
 
-  
-    .content{
+
+.content {
     padding: 3px;
-    }
+}
 
-   
-    footer {
-    background-color:rgb(18, 18, 62);
+
+footer {
+    background-color: #333;
     color: #fff;
     align-items: center;
-    text-align:center ;
+    text-align: center;
     padding: 4px 0;
     width: 100%;
     height: 30%;
-    display:flex;
+    display: flex;
     flex-direction: column-reverse;
     margin: 2px auto;
-    }
+}
 
-.foot-text{
+.foot-text {
     text-align: center;
     font-size: 20px;
     padding-bottom: 10px;
-    
+
+}
+
+/*media query */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
     }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .left {
+        font-size: 1.2rem;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    main hr {
+        margin: 20px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .firstsection {
+        flex-direction: column;
+        margin: 50px 0;
+        align-items: center;
+    }
+
+    .firstsection > div {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .rightsection img {
+        width: 100%;
+    }
+
+    .btn-resume {
+        width: 80%;
+        padding: 15px;
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .secondSection {
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .secondSection .box {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        margin: 20px 0;
+    }
+
+    .secondSection .vertical {
+        height: 70px;
+        width: 2px;
+        margin: 0 20px;
+    }
+
+    .image-top {
+        width: 20px;
+        top: -20px;
+        left: -5px;
+    }
+
+    .vertical-title {
+        top: 40px;
+        width: 100px;
+    }
+
+    .vertical-desc {
+        top: 50px;
+        width: 100px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    /* About Me Section */
+    .About-container,
+    .About {
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .About h1 {
+        font-size: 2rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .about-leftsection,
+    .about-rightsection {
+        width: 90%;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .about-leftsection h2,
+    .about-leftsection button, .about-rightsection button{
+        margin-left: 13px;
+        text-align: center;
+    }
+
+    .about-leftsection button,
+    .btn-languages {
+        width: 80%;
+    }
+
+    .about-rightsection h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .skills,
+    .img-container {
+        text-align: center;
+    }
+
+    .img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container {
+        margin: 10px 0;
+    }
+
+    /* Projects Section */
+    .main-project {
+        margin-top: 5%;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .project-box {
+        width: 90%;
+        height: 550px;
+        margin: 20px 0;
+    }
+
+    .project-box img {
+        height: auto;
+        width: 100%;
+    }
+
+    .project-info {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .project-info .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* CONTACT PAGE media query */
+
+@media (max-width: 768px) {
+    h1 {
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    .about-me {
+        font-size: 1em;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .cnt-container {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img-harshu {
+        height: 150px;
+        width: 150px;
+        margin: 20px auto;
+    }
+
+    .name {
+        margin-top: 10px;
+    }
+
+    .icon {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .icons {
+        width: 25px;
+        padding: 5px;
+    }
+
+    .btn-download {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contact-me {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .contact-info span {
+        margin: 10px 0;
+    }
+
+    .contact-info .phone {
+        margin-left: 0;
+    }
+
+    .contact-from {
+        margin-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .text, .msg {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .btn-send {
+        margin: 20px auto;
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
