@@ -169,13 +169,13 @@ h1 {
 
 
 footer {
-    background-color: #333;
+    background-color: #cbbdff;
     color: #fff;
     align-items: center;
     text-align: center;
     padding: 4px 0;
     width: 100%;
-    height: 30%;
+    height: 20%;
     display: flex;
     flex-direction: column-reverse;
     margin: 2px auto;
@@ -201,6 +201,7 @@ footer {
         flex-direction: column;
         width: 100%;
         padding: 0;
+        
     }
 
     nav ul li {
@@ -232,7 +233,7 @@ footer {
 
     .firstsection > div {
         width: 90%;
-        margin: 20px 0;
+        margin: 250px 0;
     }
 
     .leftsection {
@@ -389,7 +390,7 @@ footer {
 /* CONTACT PAGE media query */
 
 @media (max-width: 768px) {
-    h1 {
+ .contact {
         margin-top: 20px;
         font-size: 1.5em;
     }
